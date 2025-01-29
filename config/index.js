@@ -7,6 +7,7 @@ loadConfig({
 });
 const config = {
   PORT: parseInt(process.env.PORT, 10) || 3010,
+  MONGO_URL: process.env.MONGO_URL,
   AWS: {
     AccessKeyId: process.env.AWS_ACCESS_KEY_ID,
     AWSSecretKey: process.env.AWS_SECRET_KEY,
